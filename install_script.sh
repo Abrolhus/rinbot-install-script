@@ -16,7 +16,7 @@ echo ""
 echo "---- setting up CodeRelease ----"
 mkdir -p ~/dev/rinobot/CodeRelease
 cd ~/dev/rinobot/CodeRelease
-sudo apt install git
+sudo apt install git curl
 git clone https://github.com/Abrolhus/Mari
 cd Mari
 mkdir sdk
@@ -63,6 +63,7 @@ echo "Fixing OpenCV Files in naoqi-sdk"
 # cp -r cv/include/ cv/lib/ naoqi-sdk-2.1.4.13-linux64/
 cp -r ~/dev/rinobot/Core/OpenCV-2.4.13/opencv/opencv-2.4.13/release/install/include/opencv-2.4.13/*/ naoqi-sdk-2.1.4.13-linux64/include/
 cp -r ~/dev/rinobot/Core/OpenCV-2.4.13/opencv/opencv-2.4.13/release/install/lib/ naoqi-sdk-2.1.4.13-linux64/
+ln -s /usr/lib/x86_64-linux-gnu/libz.so ~/dev/rinobot/CodeRelease/Mari/sdk/naoqi-sdk-2.1.4.13-linux64/lib/libz.so
 
 # echo ""
 # echo "Testing OpenCV installation..."
