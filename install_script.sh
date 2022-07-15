@@ -12,11 +12,13 @@ echo "set bell-style none" | sudo tee -a /etc/inputrc
 # case insensitive tab completion
 echo "set completion-ignore-case on" | sudo tee -a /etc/inputrc 
 
+sudo apt update && sudo apt upgrade
+
 echo ""
 echo "---- setting up CodeRelease ----"
 mkdir -p ~/dev/rinobot/CodeRelease
 cd ~/dev/rinobot/CodeRelease
-sudo apt install git curl
+sudo apt install git curl python-setuptools
 git clone https://github.com/Abrolhus/Mari
 cd Mari
 mkdir sdk
