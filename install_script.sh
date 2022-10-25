@@ -75,4 +75,4 @@ ln -s /usr/lib/x86_64-linux-gnu/libz.so ~/dev/rinobot/CodeRelease/Mari/sdk/naoqi
 # make 
 # ./image ../lena.jpg
 # echo "Diga olá para a Lena, você está com o OpenCV 2.4.13 instalado e funcionando"
-
+echo "pronto!"
