@@ -1,10 +1,10 @@
 echo "Rinobot Ubuntu 18.04 LTS development Setup" 
 
 # echo "blacklist pcspkr" > /etc/modprobe.d/pcspkr.conf
-if [[ $EUID -eq 0 ]]; then 
-   echo "This script must not be run as root" 1>&2 
-   exit 1 
-fi 
+# if [[ $EUID -eq 0 ]]; then 
+#    echo "This script must not be run as root" 1>&2 
+#    exit 1 
+# fi 
 
 # disabling bell
 echo "set bell-style none" | sudo tee -a /etc/inputrc 
