@@ -18,7 +18,7 @@ echo ""
 echo "---- setting up CodeRelease ----"
 mkdir -p ~/dev/rinobot/CodeRelease
 cd ~/dev/rinobot/CodeRelease
-sudo apt install git curl python-setuptools
+sudo apt install -y git curl python-setuptools
 git clone https://github.com/Abrolhus/Mari
 cd Mari
 mkdir sdk
